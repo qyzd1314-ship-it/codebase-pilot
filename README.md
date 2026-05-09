@@ -186,20 +186,6 @@ npm run dev
 - [Postgres 操作说明](./docs/database-operations.md)
 - [PGVector 说明](./docs/pgvector.md)
 
-## 为什么这个项目适合面试展示
-
-这个项目比较适合用于回答下面这些高频问题：
-
-- 你的业务场景是什么
-- 为什么这个场景需要 Agent，而不是单轮问答
-- RAG 在代码场景里怎么设计
-- 检索失败时如何 fallback
-- Memory 和上下文压缩怎么做
-- 多 Agent 如何协作
-- 为什么不做开放式多 Agent
-- 如何评估 evidence grounding 和 end-to-end 效果
-
-相比“万能 Agent 平台”，`codebase-pilot` 的边界更清晰，业务目标、数据来源、评估方式都更容易讲明白。
 
 ## 后续方向
 
@@ -212,6 +198,4 @@ npm run dev
 - GitHub issue / PR 深度集成
 - 更细粒度的 capability-based agent routing
 
-## 仓库地址
 
-[https://github.com/qyzd1314-ship-it/codebase-pilot](https://github.com/qyzd1314-ship-it/codebase-pilot)
