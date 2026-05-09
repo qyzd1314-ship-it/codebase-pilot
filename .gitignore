@@ -5,7 +5,7 @@ application-dev-local.yml
 *.key
 tmp
 data/
-yu-ai-agent-frontend/node_modules/
+codebase-pilot-frontend/node_modules/
 
 HELP.md
 target/

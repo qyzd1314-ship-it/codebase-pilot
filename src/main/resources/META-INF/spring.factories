@@ -1,2 +1,2 @@
 org.springframework.boot.env.EnvironmentPostProcessor=\
-com.yupi.yuaiagent.llm.LlmOptionalDashScopeEnvironmentPostProcessor
+com.yupi.codebasepilot.llm.LlmOptionalDashScopeEnvironmentPostProcessor

@@ -32,7 +32,7 @@ springdoc:
   group-configs:
     - group: 'default'
       paths-to-match: '/**'
-      packages-to-scan: com.yupi.yuaiagent.controller
+      packages-to-scan: com.yupi.codebasepilot.controller
 knife4j:
   enable: true
   setting:

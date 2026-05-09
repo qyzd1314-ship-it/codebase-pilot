@@ -124,7 +124,7 @@ GitHub Repo 接入
 ```text
 codebase-pilot/
 ├─ src/                         # Java 后端
-├─ yu-ai-agent-frontend/        # Vue 前端
+├─ codebase-pilot-frontend/    # Vue 前端
 ├─ docs/                        # 项目说明与设计文档
 ├─ scripts/                     # 本地脚本
 ├─ Dockerfile
@@ -133,7 +133,7 @@ codebase-pilot/
 
 说明：
 
-- 前端目录当前仍保留为 `yu-ai-agent-frontend`，这是历史目录名，后续可以继续统一
+- 前端目录已经统一为 `codebase-pilot-frontend`
 - 后端主工程名已经切换为 `codebase-pilot`
 
 ## 快速开始
@@ -174,7 +174,7 @@ H2 本地数据目录：
 ### 3. 启动前端
 
 ```bash
-cd yu-ai-agent-frontend
+cd codebase-pilot-frontend
 npm install
 npm run dev
 ```
