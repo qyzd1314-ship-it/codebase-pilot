@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yupi</groupId>
-    <artifactId>yu-image-search-mcp-server</artifactId>
+    <artifactId>codebase-pilot-image-search-mcp-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>yu-image-search-mcp-server</name>
-    <description>yu-image-search-mcp-server</description>
+    <name>codebase-pilot-image-search-mcp-server</name>
+    <description>codebase-pilot-image-search-mcp-server</description>
     <url/>
     <licenses>
         <license/>

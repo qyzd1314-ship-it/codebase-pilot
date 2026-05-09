@@ -1,4 +1,4 @@
-package com.yupi.yuimagesearchmcpserver.tools;
+package com.yupi.codebasepilotimagesearchmcpserver.tools;
 
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Assertions;
