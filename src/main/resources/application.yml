@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: codebase-pilot
+  profiles:
+    active: h2
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY:}
+      chat:
+        options:
+          model: qwen3.6-plus
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: gemma3:1b
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.yupi.yuaiagent.controller
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+search-api:
+  api-key: ${SEARCH_API_KEY:}
+logging:
+  level:
+    org.springframework.ai: DEBUG
+yuai:
+  features:
+    rag-enabled: false
+    rag-cloud-enabled: false
+llm:
+  enabled: ${LLM_ENABLED:false}
+  provider: deepseek
+  default-temperature: 0.2
+  default-max-tokens: 2048
+  retry-times: 1
+  timeout-seconds: 45
+  deepseek:
+    api-key: ${DEEPSEEK_API_KEY:}
+    base-url: ${DEEPSEEK_BASE_URL:https://api.deepseek.com}
+    chat-model: ${DEEPSEEK_CHAT_MODEL:deepseek-chat}

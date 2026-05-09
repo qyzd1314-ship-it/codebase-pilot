@@ -1,0 +1,26 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY:}
+      chat:
+        options:
+          model: qwen-plus
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        model: ${OLLAMA_CHAT_MODEL:gemma3:1b}
+
+search-api:
+  api-key: ${SEARCH_API_KEY:}
+
+llm:
+  enabled: ${LLM_ENABLED:false}
+  provider: dashscope
+  default-temperature: 0.2
+  default-max-tokens: 2048
+  retry-times: 1
+  timeout-seconds: 30
+  deepseek:
+    api-key: ${DEEPSEEK_API_KEY:}
+    base-url: ${DEEPSEEK_BASE_URL:https://api.deepseek.com}
+    chat-model: ${DEEPSEEK_CHAT_MODEL:deepseek-chat}

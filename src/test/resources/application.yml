@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:h2:mem:codebase-pilot-test;MODE=MYSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: false
+  ai:
+    dashscope:
+      api-key: test-key
+
+search-api:
+  api-key: test-key
+
+yuai:
+  features:
+    rag-enabled: false
+    rag-cloud-enabled: false

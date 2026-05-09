@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg15
+    container_name: codebase-agent-pgvector
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: codebase_agent
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+
+volumes:
+  pgvector_data:

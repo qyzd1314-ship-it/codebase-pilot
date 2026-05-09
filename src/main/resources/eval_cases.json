@@ -1,0 +1,19 @@
+[
+  {
+    "id": "case_001",
+    "repoId": "repo_b51a20bcf1334b9f",
+    "question": "token cancel controller",
+    "expectedFiles": [
+      "lib/cancel/CancelToken.js",
+      "test/specs/cancel/CancelToken.spec.js"
+    ],
+    "expectedKeywords": [
+      "cancel",
+      "token",
+      "promise"
+    ],
+    "expectedRootCause": "cancel token",
+    "caseType": "BUG_DIAGNOSIS",
+    "difficulty": "medium"
+  }
+]
